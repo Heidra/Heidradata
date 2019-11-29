@@ -1,0 +1,151 @@
+:root {
+	--primary-color: rgba(13,110,139,0.25);
+	--overlay-color: rgba(24,39,51,0.85);
+	--orderbox-color: rgba(255,255,255,0.55);
+	--menu-speed: 0.55s;
+}
+
+* {
+	box-sizing_ border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.4;
+}
+
+.container {
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.showcase {
+	background-color: var(--primary-color);
+	color: #fff;
+	height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.showcase:before {
+	content: '';
+	background: url('img/art-background.jpg') no-repeat center center/cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+
+.showcase .showcase-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+	text-align: center;
+	height: 100%;
+}
+
+.showcase h1 {
+	font-size: 4rem;
+}
+
+.showcase p {
+	font-size: 1.3rem;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	margin-top: 1rem;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.form {
+	width: 50%;
+	font-size: 1.3rem;
+	text-align: left;
+	margin: auto;
+	margin-top: 2%;
+	padding: 2%;
+	background-color: var(--orderbox-color);
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+}
+
+.inputarea {
+	display: flex;
+	flex-direction: column !important;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.input {
+	position: relative !important;
+}
+
+.inputbox {
+	-webkit-appearance: none;
+	width: 97%;
+	margin: 0;
+	padding: .6em .7em;
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+	box-shadow: 0 0 0 rgba(255,255,255,0);
+	font-size: 13px;
+	font-family: inherit;
+	line-height: 1.15384615;
+}
+
+.storebuttons {
+	float: right;	
+}
+
+.btn2 {
+	display: inline-block;
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+	font-size: 15px;
+	font-family: inherit;
+}
+
+.btn2:hover {
+	opacity: 0.7;
+}
+
+.itemandbtn {
+	width: 100%;
+	display: inline-block;
+}
+
+.item {
+	float: left;
+  	top: 50%;
+}
+
+.btn2 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: inherit;
+}
