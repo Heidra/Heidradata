@@ -1,0 +1,76 @@
+/* Sidemenu in the StudyCenter */
+ 
+.multi-level, .item  ul, .nav2  input[type="checkbox"] {
+	display: none;
+}
+
+#menu:checked ~ .multi-level, .item2  input:checked ~ ul {
+	display:block;
+}
+
+/*Arrow*/
+
+.arrow {
+	float: left;
+}
+
+/*Styles*/
+
+label:hover {
+	cursor: pointer;
+}
+
+label {
+	width: 100%;
+	display: block;
+	z-index: 3;
+	position: relative;
+}
+ 
+.nav2 { 
+	width: 20%;
+	background-color: rgba(13,110,139,0.25);
+	overflow-x: hidden;
+	border-bottom: 1px solid #CFD8DC;
+	margin-top: 5%;
+	margin-left: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: #0d6e8b;
+}
+
+#nav-icon {
+	font-size: 28px;
+	line-height: 50px;
+	padding-left: 1em;
+	color: white;
+	background-color: #0d6e8b;
+}
+
+.nav2 ul, .nav2 li, label {
+	line-heigth: 50px;
+	margin: 0;
+	padding: 0 2em;
+	list-style: none;
+	text-decoration: none;
+	font-weight: 100;
+	width: 100%;
+}
+
+.item2 ul {
+	padding: 0 0.25em;
+}
+
+.item2 ul li label {
+	color: #16b8e9;
+}
+
+.nav2 li a {
+	line-heigth: 50px;
+	margin: 0;
+	padding: 0 2em;
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 100;
+}
