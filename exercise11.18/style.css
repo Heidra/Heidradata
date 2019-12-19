@@ -1,0 +1,269 @@
+:root {
+	--primary-color: rgba(13,110,139,0.25);
+	--overlay-color: rgba(24,39,51,0.85);
+	--orderbox-color: rgba(255,255,255,0.55);
+	--menu-speed: 0.55s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.container {
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.showcase {
+	background-color: var(--primary-color);
+	color: #fff;
+	height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.showcase:before {
+	content: '';
+	background: url('img/art-background.jpg') no-repeat center center/cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+
+.showcase .showcase-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+	text-align: center;
+	height: 100%;
+}
+
+.showcase h1 {
+	font-size: 4rem;
+}
+
+.showcase p {
+	font-size: 1.3rem;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 1rem 1.5rem;
+	margin-top: 1rem;
+	font-size: 15px;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.formarea {
+	width: 50%;
+	font-size: 1.3rem;
+	text-align: left;
+	margin: auto;
+	margin-top: 2%;
+	padding: 2%;
+	background-color: var(--orderbox-color);
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+}
+
+.articlebuttons {
+	width: 100%;
+	display: inline-block;
+}
+
+.artbtn {
+	float: right;
+}
+
+.namebtn {
+	float: left;
+}
+
+button.hide {
+	display: none;
+}
+
+.form {
+	width: 100%;
+}
+
+.inputarea {
+	display: flex;
+	flex-direction: column !important;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.articlenumber {
+	color: #666699; 	
+}
+
+.input {
+	position: relative !important;
+}
+
+.inputbox {
+	-webkit-appearance: none;
+	width: 98%;
+	margin: 0;
+	padding: .6em .7em;
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: inherit;
+	line-height: 1.15384615;
+}
+
+.storebuttons {
+	display: inline-block;
+	float: right;	
+}
+
+.deletebtn {
+	display: inline-block;
+	float: right;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);	
+}
+
+
+.btn2, .btn3 {
+	display: inline-block;
+	border: none;
+	background-color: rgba(13,110,139,0.6) ;
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+	font-size: 15px;
+	font-family: inherit;
+}
+
+.btn2:hover, .btn3:hover {
+	opacity: 0.7;
+}
+
+.btn2 a, .btn3 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: inherit;
+}
+
+.btn4 {
+	display: inline-block;
+	border: none;
+	background-color: rgba(13,110,139,0.6) ;
+	color: #fff;
+	margin-top: 2%;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+	font-size: 15px;
+	font-family: inherit;
+	width: 100%;
+}
+
+.btn4:hover {
+	opacity: 0.7;
+}
+
+.btn4 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: inherit;
+}
+
+.frame {
+	overflow-y: auto; 
+	max-height: 250px;	
+}
+
+.productdetails {
+	width: 100%;
+	display: inline-block;
+}
+
+.row {
+	position: relative; 
+	margin: auto;
+	padding: 2%;
+	background-color: #fff;
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+}
+
+.item {
+	display: inline-block;
+	width: 30%;
+	float: left;
+	color: #666699; 
+}
+
+.artno {
+	display: inline-block;
+	width: 30%;
+	color: #3d5c5c;
+}
+
+.price {
+	display: inline-block;
+	width: 25%;
+	color: #666699;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Searching Area */
+  #project-icon {
+    float: left;
+    height: 32px;
+    width: 32px;
+  }
+  #project-description {
+    margin: 0;
+    padding: 0;
+  }
+
+

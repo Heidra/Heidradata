@@ -1,0 +1,522 @@
+:root {
+	--primary-color: rgba(13,110,139,0.25);
+	--overlay-color: rgba(24,39,51,0.85);
+	--orderbox-color: rgba(255,255,255,0.55);
+	--menu-speed: 0.55s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.4;
+	margin: 0;
+}
+.container {
+  background-color: var(--orderbox-color);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #94b8b8;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  text-align: left;
+  height: 100%;
+}
+
+.showcase {
+	background-color: var(--primary-color);
+	color: #fff;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.showcase:before {
+	content: '';
+	background: url('img/art-background.jpg') no-repeat center center/cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+
+.showcase .showcase-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+	text-align: center;
+	height: 100%;
+}
+
+.showcase h1 {
+	font-size: 4rem;
+}
+
+.showcase p {
+	font-size: 1.3rem;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  color: #666699;
+  text-align: left;
+}
+
+.row3 {
+	padding-top: 2%;
+	padding-bottom: 11%;
+}
+
+.form {
+	padding: 2%;
+	height: 100%;
+}
+
+.form2 {
+	padding: 6%;
+	height: 100%;
+}
+
+
+
+/* Visa */
+
+[type="radio"].visa {
+  display: none;
+}
+
+[type="radio"].visa + .labelstyle {
+  cursor: pointer;
+  display: table;
+}
+
+[type="radio"].visa + .labelstyle:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 32px;
+  min-width: 28px;
+}
+
+[type="radio"].visa:checked + .labelstyle:before {
+  	content: "\f1f0";
+	font-weight: 900; 
+	color: navy;
+	line-height: 1;
+}
+
+[type="radio"].visa:not(:checked) + .labelstyle:before {
+	content: "\f1f0";
+	font-weight: 900;
+	 color: #b3b3ff;
+	line-height: 1;
+}
+
+[type="radio"].visa:hover + .labelstyle:before {
+   color: #67afe5;
+}
+
+
+
+/* Amex */
+
+[type="radio"].amex {
+  display: none;
+}
+
+[type="radio"].amex + .labelstyle {
+  cursor: pointer;
+  display: table;
+}
+
+[type="radio"].amex + .labelstyle:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 32px;
+  min-width: 28px;
+}
+
+[type="radio"].amex:checked + .labelstyle:before {
+  	content: "\f1f3";
+	font-weight: 900; 
+	color: blue;
+	line-height: 1;
+}
+
+[type="radio"].amex:not(:checked) + .labelstyle:before {
+	content: "\f1f3";
+	font-weight: 900;
+	 color: #b3b3ff;
+	line-height: 1;
+}
+
+[type="radio"].amex:hover + .labelstyle:before {
+   color: #67afe5;
+}
+
+
+/*MasterCard */
+
+[type="radio"].mastercard {
+  display: none;
+}
+
+[type="radio"].mastercard + .labelstyle {
+  cursor: pointer;
+  display: table;
+}
+
+[type="radio"].mastercard + .labelstyle:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 32px;
+  min-width: 28px;
+}
+
+[type="radio"].mastercard:checked + .labelstyle:before {
+  	content: "\f1f1";
+	font-weight: 900; 
+	color: red;
+	line-height: 1;
+}
+
+[type="radio"].mastercard:not(:checked) + .labelstyle:before {
+	content: "\f1f1";
+	font-weight: 900;
+	 color: #b3b3ff;
+	line-height: 1;
+}
+
+[type="radio"].mastercard:hover + .labelstyle:before {
+   color: #67afe5;
+}
+
+
+/*Discover */
+
+[type="radio"].discover {
+  display: none;
+}
+
+[type="radio"].discover + .labelstyle {
+  cursor: pointer;
+  display: table;
+}
+
+[type="radio"].discover + .labelstyle:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 32px;
+  min-width: 28px;
+}
+
+[type="radio"].discover:checked + .labelstyle:before {
+  	content: "\f1f2";
+	font-weight: 900; 
+	color: #cc8500;
+	line-height: 1;
+}
+
+[type="radio"].discover:not(:checked) + .labelstyle:before {
+	content: "\f1f2";
+	font-weight: 900;
+	 color: #b3b3ff;
+	line-height: 1;
+}
+
+[type="radio"].discover:hover + .labelstyle:before {
+   color: #67afe5;
+}
+
+------------------------------------------------------
+
+
+.col-50, .half1, .half2 {
+	width: 50%;
+}
+
+.col-75 {
+	width: 75%;
+}
+
+.col-30 {
+	width: 30%;
+}
+
+.col-30,
+.col-75, 
+.col-50 {
+  padding: 1%;
+}
+
+.half1 {
+	padding-right: 1%;	
+}
+
+.half2 {
+	padding-left: 1%;	 
+}
+
+.half11 {
+	padding-right: 1%;
+	width: 80%;
+}
+
+.half21 {
+	padding-left: 1%;
+	width: 20%;  
+}
+
+
+.sameadr {
+	padding: 5px;
+}
+
+.endprice {
+	width: 100%;	
+}
+
+.hiddenform {
+	width: 100%;
+}
+
+.icon-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.inputbox2 {
+	width: 100%;
+	padding: .6em .7em;
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: inherit;
+	line-height: 1.15384615;
+}
+
+.inputbox3 {
+	width: 100%;
+	padding: 1%;
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: inherit;
+	line-height: 1.15384615;
+}
+
+.inputbox3 option {
+	width: 100%;
+}
+
+.cardtitle {
+	margin-bottom: 8.5px;
+  	display: block;
+}
+
+.labelstyle {
+	margin-right: 2%;
+	margin-bottom: 0;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.buttonline {
+	padding: 1%;
+}
+
+.gobackshopping {
+	vertical-align: bottom;
+}
+
+.btn {
+  border: none;
+  background-color: rgba(13,110,139,0.6);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 15px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in;
+  width: 100%;
+  font-family: inherit;
+	cursor: pointer;
+}
+
+.btn:hover, .btn3:hover {
+  opacity: 0.7;
+}
+
+.btn a,.btn3 a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.btn3 {
+  border: none;
+  background-color: rgba(13,110,139,0.6);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.6rem;
+  font-size: 15px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in;
+  width: 100%;
+  font-family: inherit;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+.frame {
+	overflow-y: auto;
+	width: 100%;	
+	height: 388px;
+}
+
+.row2 {
+	position: relative; 
+	margin: auto;
+	padding: 2%;
+	background-color: #fff;
+	border: 1px solid #94b8b8;
+	border-radius: 3px;
+}
+
+.item {
+	display: inline-block;
+	width: 44%;
+	float: left;
+	color: #666699; 
+}
+
+.item2 {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	color: #666699; 
+}
+
+.artno {
+	display: inline-block;
+	width: 10%;
+	color: #3d5c5c;
+	text-align: center;
+}
+
+.artno2 {
+	display: inline-block;
+	width: 20%;
+	color: #3d5c5c;
+	text-align: center;
+}
+
+.price {
+	display: inline-block;
+	width: 8%;
+	color: #666699;
+}
+
+.price2 {
+	display: inline-block;
+	width: 20%;
+	color: #666699;
+	float: right;
+}
+
+.price3 {
+	display: inline-block;
+	width: 10%;
+	color: #666699;
+	text-align: right;
+}
+
+.euro {
+	width: 10%;
+	display: inline-block;
+}
+
+.deletebtn {
+	display: inline-block;
+	float: right;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);	
+}
+
+.btn2{
+	display: inline-block;
+	border: none;
+	background-color: rgba(13,110,139,0.6) ;
+	color: #fff;
+	padding: 0.5rem 0.3rem;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+	font-size: 15px;
+	font-family: inherit;
+}
+
+.btn5{
+	display: inline-block;
+	border: none;
+	background-color: rgba(13,110,139,0.6) ;
+	color: #fff;
+	padding: 0.2rem 0.2rem;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+	font-size: 15px;
+}
+
+.btn4{
+	display: inline-block;
+	border: none;
+	background-color: rgba(13,110,139,0.6) ;
+	color: #fff;
+	padding: 0.35rem 0.5rem;
+	margin-left: 2%;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in;
+	font-size: 13px;
+	font-family: inherit;
+	height: 5%;
+}
+
+.btn2:hover, .btn4:hover, .btn5:hover{
+	opacity: 0.7;
+}
+
+.btn2 a , .btn4 a, .btn5 a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: inherit;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
